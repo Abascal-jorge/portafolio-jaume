@@ -18,6 +18,19 @@
 
 /* CSS de proyectos y testimonio */
 
+.proyectos-items{
+    padding-top: 40px;
+}
+
+.img-proyecto{
+    text-align: center;
+}
+
+.img-proyecto img{
+    width: 100%;
+    height: auto;
+}
+
 .proyecto-contenido{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -67,11 +80,101 @@
     margin: 24px 0 0 0;
 }
 
+@media screen and (min-width: 380px){
+    .img-proyecto.macbook img{
+        width: 327.66px;
+        height: 197px;
+    }
+
+    .img-proyecto.ipad  img{
+        width: 328.75px;
+        height: 322px;
+    }
+    .img-proyecto.iphone img{
+         width: 302px;
+         height: 536px ;
+    }
+}
 
 @media screen and (min-width: 768px){
+
+    .presentacion{
+        padding: 200px 0;
+    }
 
     .presentacion .proyec-description{
         font: var(--oxigen);
     }
 
+    .items-proyecto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .img-proyecto{
+        flex: 1;
+    }
+
+    .proyecto-contenido{
+        flex: 1;
+    }
+
+    .items-proyecto .left{
+        order: 2;
+    }
+
+    .button-contenedor{
+        flex-direction: row;
+    }
+
+    .button-contenedor button{
+        width: 168px;
+        height: 49px;
+    }
+
+    .items-proyecto{
+        padding: 100px 0;
+    }
+
+    /*Testimonios*/
+    .testimonio{
+        text-align: center;
+        padding: 80px;
+    }
+    .description-testi{
+        font: var(--oxigen3);
+    }
+
+    .cita{
+        font: var(--headline5);
+    }
+    .img-testimonio img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 860px){
+    .enlace-fijo{
+        font: var(--headline4);
+    }
+}
+
+@media screen and (min-width: 1124px){
+    .img-proyecto.macbook img{
+        width: 637px;
+        height: 392px;
+        object-fit: cover;
+    }
+
+    .img-proyecto.ipad  img{
+        width: 638px;
+        height: 628px;
+    }
+    .img-proyecto.iphone img{
+         width: 302px;
+         height: 536px ;
+    }
 }
