@@ -1,0 +1,77 @@
+.presentacion{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.presentacion .testimonios{
+    font: var(--headline5);
+    max-width: 900px;  
+    margin: auto;  
+}
+
+.presentacion .proyec-description{
+    font: var(--description);
+    margin: 0 0 24px 0;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* CSS de proyectos y testimonio */
+
+.proyecto-contenido{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.info-proyecto{
+    font: var(--body1);
+}
+
+.button-contenedor{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    gap: 16px;
+}
+
+
+.enlace-fijo{
+    text-decoration: none;
+    font: var(--headline5);
+    color: var(--white);
+    padding: 4px 8px ;
+    background: var(--purple);
+    box-shadow: -4px 4px 0 #ffffff;
+}
+
+/* Css testimonio*/
+
+.testimonio{
+    background: rgba(255, 255, 255, .2);
+    border-radius: 24px;
+    padding: 24px;
+    margin: 40px 0 80px 0;
+}
+
+.img-testimonio{
+    text-align: center;
+}
+
+.description-testi{
+    margin: 24px 0;
+    font: var(--oxigen2);
+}
+
+.cita{
+    font: var(--caption);
+    margin: 24px 0 0 0;
+}
+
+
+@media screen and (min-width: 768px){
+
+    .presentacion .proyec-description{
+        font: var(--oxigen);
+    }
+
+}
